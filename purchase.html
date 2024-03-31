@@ -1,205 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase Bender</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <style>
-        /* Font styles */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1D1E23;
-            color: #ffffff; /* Changed font color to white */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Bender - Unlock Premium Features</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <style>
+    /* Font styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #222831; /* Darker background */
+      color: #ffffff;
+    }
 
-        h1, h2, h3, h4, h5, h6 {
-            margin: 0;
-            font-weight: 900;
-        }
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      font-weight: 900;
+    }
 
-        p {
-            margin: 0;
-        }
+    p {
+      margin: 0;
+      font-size: 16px; /* Adjusted for better readability */
+    }
 
-        /* Navigation bar */
-        #navigationBar {
-            background-color: #17171A;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
+    /* Navigation bar */
+    #navigationBar {
+      background-color: #17171A;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
 
-        .nav-left {
-            display: flex;
-            align-items: center;
-        }
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
 
-        .nav-left img {
-            margin-right: 10px;
-        }
+    .nav-left img {
+      margin-right: 10px;
+    }
 
-        .nav-left a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 16px; /* Adjusted font size */
-        }
+    .nav-left a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 16px;
+    }
 
-        /* Main container */
-        .container {
-            padding-top: 80px; /* Adjusted padding */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 50px; /* Added some padding */
-        }
+    /* Main container */
+    .container {
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
 
-        /* Purchase plans */
-        .plans {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
+    /* Hero Section */
+    .hero {
+      margin-bottom: 40px; /* Added spacing */
+      text-align: center;
+    }
 
-        .plan {
-            background-color: #17171A;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            flex: 1;
-            max-width: 300px;
-            transition: transform 0.3s ease-in-out;
-            color: #ffffff; /* Adjusted font color */
-        }
+    .hero h1 {
+      font-size: 36px; /* Larger heading */
+      margin-bottom: 10px;
+    }
 
-        .plan:hover {
-            transform: translateY(-5px);
-        }
+    .hero p {
+      font-size: 18px;
+      line-height: 1.5; /* Improved spacing */
+    }
 
-        .plan h2 {
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
+    /* Purchase plans */
+    .plans {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
 
-        .plan p {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
+    .plan {
+      background-color: #29323b; /* Darker plan background */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      flex: 1;
+      max-width: 300px;
+      transition: transform 0.3s ease-in-out;
+      color: #ffffff;
+    }
 
-        .plan button {
-            padding: 10px 20px;
-            background-color: #7289DA;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    .plan:hover {
+      transform: translateY(-5px);
+    }
 
-        .plan button:hover {
-            background-color: #677bc4;
-        }
+    .plan h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
 
-        /* Support server button */
-        .support-button {
-            background-color: #7289DA;
-            color: #ffffff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-            font-size: 18px;
-        }
+    .plan p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
 
-        .support-button:hover {
-            background-color: #677bc4;
-        }
+    .plan button {
+      padding: 10px 20px;
+      background-color: #7289DA;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            background-color: #17171A;
-            padding: 20px 0;
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            color: #cccccc; /* Adjusted font color */
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation bar -->
-    <nav id="navigationBar">
-        <div class="nav-left">
-            <img src="images/botLogo.png" width="48px" height="48px">
-            <a href="#">Home</a> <!-- Adjusted link -->
-            <a href="commands.html">Commands</a>
-        </div>
-        <div class="nav-right">
-            <a href="https://discord.com/api/oauth2/authorize?client_id=1170320568164286584&scope=bot+applications.commands&permissions=8" target="_blank" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg"><i class="fab fa-discord mr-1"></i> Invite</a>
-        </div>
-    </nav>
+    .plan button:hover {
+      background-color: #677bc4;
+    }
 
-    <!-- Main content -->
-    <div class="container">
-        <h1>Purchase Bender</h1>
-        <p>Thank you for choosing Bender! Select a plan below to unlock premium features.</p>
-        
-        <!-- Purchase plans -->
-        <div class="plans">
-            <div class="plan">
-                <h2>Monthly Plan</h2>
-                <p>$10 per month</p>
-                <p>Includes:</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                </ul>
-                <button>Subscribe Now</button>
-            </div>
-            <div class="plan">
-                <h2>Nitro Plan</h2>
-                <p>$100 per year</p>
-                <p>Includes:</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                </ul>
-                <button>Subscribe Now</button>
-            </div>
-            <div class="plan">
-                <h2>Lifetime Plan</h2>
-                <p>$500 one-time payment</p>
-                <p>Includes:</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                </ul>
-                <button>Subscribe Now</button>
-            </div>
-        </div>
-
-        <!-- Support server button -->
-        <a href="https://discord.gg/nicki" target="_blank" class="support-button">Join Support Server to Purchase</a>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>Copyright © Bendbot 2024</p>
-    </footer>
-</body>
-</html>
+    /* Support server button */
+    .support-button {
+      background-color: #7289DA;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
