@@ -1,74 +1,82 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Montserrat Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-
-  <!-- Changes this to your bot's name -->
-  <title>Bender</title>
-
-  <!-- Change the content attribute's value to your bot's description -->
-  <meta name="description" content="A multi-purpose Discord bot with all features a server would need.">
-
-  <!-- Change the content attribute's value to your name -->
-  <meta name="Nax" content="TrustedMercury">
-
-  <link rel="stylesheet" href="styles/theTrendingStyle.css">
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/css/all.css" />
-
+  <title>Bender - Powerful Discord Bot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="images/bender_logo.png" alt="Bender Logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="purchase.html">Purchase</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<body class="bg-shinyGray overflow-x-hidden">
-  <nav id="navigationBar" class="flex flex-row items-center justify-between p-6 bg-sweetBlack">
-    <div class="left flex flex-row items-center ml-10 md:ml-20 text-white">
-      <img src="images/botLogo.png" width="48px" height="48px" class="mr-2 hidden md:inline pointer-events-none noselect" />
-      <a href="" class="mx-4 text-xl hover:text-blurple">Home</a>
-      <a href="commands.html" class="mx-4 text-xl hover:text-blurple hidden md:inline">Commands</a>
-    </div>
-    <div class="right mr-10 md:mr-20">
-      <a href="https://discord.com/api/oauth2/authorize?client_id=1170320568164286584&scope=bot+applications.commands&permissions=8" target="_blank" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg" target="_blank" class="px-8 py-3 whitespace-no-wrap bg-blurple text-white rounded-lg text-xl font-semibold hover:bg-beautyPurple"><i class="fab fa-discord mr-1"></i> Invite</a>
-    </div>
-  </nav>
-
-  <div id="container" class="flex flex-col items-center justify-center">
-    <div class="flex flex-col items-center justify-center pt-40 text-center">
-      <span class="text-2xl md:text-5xl font-semibold text-white">Solid & Inline</span>
-      <span class="text-gray-400 text-lg md:text-xl max-w-xl font-light">Helping servers grow exponentially with a simple solution. Make your server active and entertain your community with a simple solution - <b>a single discord bot</b>!</span>
-      <div class="flex flex-col md:flex-row mt-8">
-        <a href="https://bender.lat/purchase" target="_blank" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg">Purchase Bender now!</a>
-        <a href="https://discord.gg/nicki" target="_blank" class="text-2xl hvr-grow text-white bg-sweetBlack p-4 md:px-8 mx-4 my-4 rounded-lg border-blurple border-2">Join the Support Server</a>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Level Up Your Discord Server with Bender</h1>
+        <p>Bender is your one-stop solution for streamlined server management, automated tasks, and engaging fun. Take control and elevate your server experience!</p>
+        <a href="purchase.html" class="button">Get Started</a>
       </div>
-    </div>
-    <svg class="bg-blurple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1D1E23" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,74.7C384,75,480,117,576,160C672,203,768,245,864,261.3C960,277,1056,267,1152,240C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-    <div class="flex flex-col md:flex-row items-center justify-center w-full bg-blurple">
-      <img src="images/discordUI.png" class="max-w-xs md:max-w-5xl noselect pointer-events-none" />
-      <div class="flex flex-col items-center justify-center noselect">
-        <div class="flex flex-col items-center text-4xl mb-4">
-          <span class="font-montserrat font-black">75+</span>
-          <span class="font-montserrat font-black">SERVERS</span>
-        </div>
-        <div class="flex flex-col items-center text-4xl my-4">
-          <span class="font-montserrat font-black">10,000+</span>
-          <span class="font-montserrat font-black">USERS</span>
-        </div>
-        <div class="flex flex-col items-center text-4xl mt-4">
-          <span class="font-montserrat font-black">4000+</span>
-          <span class="font-montserrat font-black">CHANNELS</span>
-        </div>
+      <div class="hero-image">
+        <img src="images/bender_hero_image.png" alt="Bender in action">
       </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7289DA" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,304C384,320,480,320,576,288C672,256,768,192,864,138.7C960,85,1056,43,1152,48C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-    <div class="flex flex-row items-center justify-center mb-10">
-      <span class="text-lg text-gray-400 font-semibold">Copyright © Bendbot 2024</span>
-    </div>
-  </div>
+    </section>
 
+    <section class="key-features">
+      <h2>Unleash the Power of Bender</h2>
+      <div class="feature-card">
+        <i class="fas fa-cog"></i>
+        <h3>Simplified Management</h3>
+        <p>Effortlessly manage roles, channels, and permissions, freeing you up for other tasks.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-robot"></i>
+        <h3>Seamless Automation</h3>
+        <p>Set up automated tasks like welcome messages, member verification, and more for a smooth experience.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-laugh"></i>
+        <h3>Engaging Fun & Games</h3>
+        <p>Boost server activity with interactive games, polls, and exciting entertainment features.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Valuable Insights</h3>
+        <p>Gain valuable insights into server activity and member behavior to make informed decisions.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Trusted by Server Owners & Members</h2>
+      <div class="testimonial">
+        <p>"Bender has transformed our server! It's become a breeze to manage and keeps members engaged." - John Doe, Server Owner</p>
+        <img src="images/avatar_1.png" alt="John Doe Avatar">
+      </div>
+      <div class="testimonial">
+        <p>"Bender's fun features are a hit with our members. It's a great way to build a vibrant community." - Jane Smith, Server Member</p>
+        <img src="images/avatar_2.png" alt="Jane Smith Avatar">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2024 Bendbot. All rights reserved.</p>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fab fa-discord"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </footer>
 </body>
-
 </html>
