@@ -26,7 +26,6 @@
         <div class="container">
             <h2>Welcome to Bender</h2>
             <p>Bender is a powerful Discord bot designed to streamline server management and enhance community engagement. Whether you need moderation tools, role management, or customization options, Bender has you covered.</p>
-            <a href="#about" class="cta-button">Learn More</a>
         </div>
     </section>
 
@@ -34,21 +33,32 @@
         <div class="container">
             <h2>About Bender</h2>
             <p>Bender is a versatile Discord bot designed to enhance your server's management capabilities. With features such as moderation commands, role management, and customization options, Bender makes it easy to maintain a thriving Discord community.</p>
-            <a href="#features" class="cta-button">View Features</a>
+            <p>Bender is built with simplicity and usability in mind, allowing server owners to quickly set up and configure their server without any technical expertise. With its intuitive interface and powerful features, Bender is the perfect solution for managing your Discord community.</p>
+            <p>Our team is committed to providing regular updates and new features to ensure that Bender remains the best Discord bot on the market. We're always listening to feedback from our users and incorporating suggestions to make Bender even better.</p>
+            <p>Join the thousands of servers already using Bender to enhance their Discord experience. Try Bender today and take your server to the next level!</p>
         </div>
     </section>
 
     <section id="features">
         <div class="container">
             <h2>Features</h2>
+            <p>Bender offers a wide range of features to meet the needs of any Discord server:</p>
             <ul>
                 <li>Powerful moderation commands</li>
                 <li>Customizable role management</li>
                 <li>Auto-moderation filters</li>
                 <li>Custom commands and responses</li>
                 <li>Server statistics and analytics</li>
+                <li>Integration with popular services like Twitch and YouTube</li>
+                <li>Event scheduling and reminders</li>
+                <li>Music playback and streaming</li>
+                <li>Customizable bot profiles and avatars</li>
+                <li>Web dashboard for easy management</li>
+                <li>API for developers to extend functionality</li>
+                <li>24/7 uptime and reliable performance</li>
+                <li>Regular updates with new features and improvements</li>
             </ul>
-            <a href="#documentation" class="cta-button">Read Documentation</a>
+            <p>With Bender, you have everything you need to create and manage a successful Discord community. Whether you're a small gaming server or a large community hub, Bender has the tools and features to help you succeed.</p>
         </div>
     </section>
 
@@ -56,7 +66,9 @@
         <div class="container">
             <h2>Documentation</h2>
             <p>Learn how to make the most of Bender's features with our comprehensive documentation. Whether you're a beginner or an experienced Discord server owner, our guides and tutorials will help you get started.</p>
-            <a href="#support" class="cta-button">Get Support</a>
+            <p>Our documentation covers everything from basic setup and configuration to advanced customization and troubleshooting. With step-by-step instructions and helpful tips, you'll be up and running with Bender in no time.</p>
+            <p>Looking for a specific feature or need help with a particular task? Our documentation is organized into easy-to-navigate sections, making it quick and easy to find the information you need.</p>
+            <p>Can't find what you're looking for in our documentation? No problem! Our support team is available to assist you with any questions or issues you may encounter. We're here to help you succeed with Bender.</p>
         </div>
     </section>
 
@@ -64,6 +76,8 @@
         <div class="container">
             <h2>Support</h2>
             <p>Need help with Bender? Our support team is here to assist you. Whether you have questions about using specific features or encounter technical issues, we're dedicated to providing prompt and helpful support.</p>
+            <p>You can reach out to us through our Discord server, where our community and support staff are available to answer questions and provide assistance. We also offer email support for more complex issues that require further investigation.</p>
+            <p>Our goal is to ensure that you have a positive experience with Bender and that your Discord server runs smoothly. Don't hesitate to reach out if you need assistance!</p>
             <a href="purchase.html" class="cta-button">Purchase Premium</a>
         </div>
     </section>
@@ -73,5 +87,18 @@
             <p>&copy; 2024 Bender. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.container').waypoint(function() {
+                $('.container').addClass('animated fadeIn');
+            }, {
+                offset: '80%'
+            });
+        });
+    </script>
 </body>
 </html>
