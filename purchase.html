@@ -4,133 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Purchase Bender - Unlock Premium Features</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-  <style>
-    /* Font styles */
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #222831; /* Darker background */
-      color: #ffffff;
-    }
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="images/bender_logo.png" alt="Bender Logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="purchase.html">Purchase</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-      font-weight: 900;
-    }
+  <main>
+    <section class="purchase-hero">
+      <h1>Unlock Premium Features</h1>
+      <p>Elevate your server experience with Bender's premium features. Gain access to exclusive tools, enhanced functionalities, and ongoing support.</p>
+    </section>
 
-    p {
-      margin: 0;
-      font-size: 16px; /* Adjusted for better readability */
-    }
+    <section class="plans">
+      <h2>Choose Your Plan</h2>
+      <div class="plan">
+        <h3>Monthly Plan</h3>
+        <p>$10 per month</p>
+        <ul>
+          <li>All Basic Features</li>
+          <li>Customizable Welcome Messages</li>
+          <li>Advanced Role Management</li>
+          <li>Fun & Interactive Games</li>
+          <li>Priority Support</li>
+        </ul>
+        <a href="#" class="button">Subscribe Now</a>
+      </div>
+      <div class="plan recommended">
+        <h3>Yearly Plan (Most Popular)</h3>
+        <p>$8 per month (Billed Annually)</p>
+        <ul>
+          <li>All Monthly Plan Features</li>
+          <li>Exclusive Music & Entertainment Features</li>
+          <li>Customizable Server Statistics</li>
+          <li>24/7 Dedicated Support</li>
+          <span class="badge">Save 20%!</span>
+        </ul>
+        <a href="#" class="button primary">Subscribe Now</a>
+      </div>
+      <div class="plan">
+        <h3>Lifetime Plan</h3>
+        <p>$50 one-time payment</p>
+        <ul>
+          <li>All Yearly Plan Features</li>
+          <li>Free Lifetime Updates</li>
+          <li>Priority Access to New Features</li>
+          <li>VIP Support Channel</li>
+        </ul>
+        <a href="#" class="button">Subscribe Now</a>
+      </div>
+    </section>
 
-    /* Navigation bar */
-    #navigationBar {
-      background-color: #17171A;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      z-index: 1000;
-    }
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3 class="question">What are the Basic Features included?</h3>
+        <p class="answer">Basic features include server management tools, automated tasks, basic moderation tools, and some fun features.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">How do I cancel my subscription?</h3>
+        <p class="answer">You can easily manage your subscription through our secure online portal. We also offer a no-questions-asked refund policy within 30 days.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">Do you offer custom plans?</h3>
+        <p class="answer">Absolutely! If you have specific needs, please contact our sales team for a custom plan tailored to your server.</p>
+      </div>
+    </section>
+  </main>
 
-    .nav-left {
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-left img {
-      margin-right: 10px;
-    }
-
-    .nav-left a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-right: 20px;
-      font-size: 16px;
-    }
-
-    /* Main container */
-    .container {
-      padding-top: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 50px;
-    }
-
-    /* Hero Section */
-    .hero {
-      margin-bottom: 40px; /* Added spacing */
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 36px; /* Larger heading */
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.5; /* Improved spacing */
-    }
-
-    /* Purchase plans */
-    .plans {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-
-    .plan {
-      background-color: #29323b; /* Darker plan background */
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      flex: 1;
-      max-width: 300px;
-      transition: transform 0.3s ease-in-out;
-      color: #ffffff;
-    }
-
-    .plan:hover {
-      transform: translateY(-5px);
-    }
-
-    .plan h2 {
-      margin-bottom: 10px;
-      font-size: 20px;
-    }
-
-    .plan p {
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-
-    .plan button {
-      padding: 10px 20px;
-      background-color: #7289DA;
-      color: #ffffff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .plan button:hover {
-      background-color: #677bc4;
-    }
-
-    /* Support server button */
-    .support-button {
-      background-color: #7289DA;
-      color: #ffffff;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
+  <footer>
+    <p>Copyright &copy; 2024 Bendbot. All rights reserved.</p>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fab fa-discord"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+    </
