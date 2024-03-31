@@ -32,6 +32,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 nav ul {
@@ -45,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #17171A; /* sweetBlack link color */
+    color: #fff; /* White link color */
     transition: color 0.3s ease;
 }
 
@@ -55,12 +56,21 @@ nav ul li a:hover {
 
 /* Sections styles */
 section {
-    padding: 100px 0; /* Add vertical padding */
-    text-align: center; /* Center-align section content */
+    padding: 100px 20px; /* Add vertical padding and horizontal padding */
+    text-align: left; /* Left-align section content */
+    margin: 0 auto;
+    max-width: 800px; /* Limit section width for better readability */
+    opacity: 0; /* Hide sections by default */
+}
+
+section.animated {
+    opacity: 1; /* Show sections with animation */
+    transition: opacity 1s ease; /* Smooth fade-in animation */
 }
 
 section h2 {
     margin-bottom: 30px; /* Add space below title */
+    text-align: center; /* Center-align section titles */
 }
 
 section p {
@@ -91,16 +101,6 @@ footer {
     text-align: center;
 }
 
-/* Smooth scrolling animations */
-.animated {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.animated.fadeIn {
-    opacity: 1;
-}
-
 /* Background image for hero section */
 #hero {
     background-image: url('hero-background.jpg'); /* Replace 'hero-background.jpg' with your image file */
@@ -125,9 +125,7 @@ section {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 /* Image styling */
