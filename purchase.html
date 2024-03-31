@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Bender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/theTrendingStyle.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/css/all.css">
+    <style>
+        /* Additional styles specific to the purchase page */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+            padding: 0 20px;
+        }
+
+        .purchase-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .purchase-description {
+            font-size: 1.2rem;
+            color: #cccccc;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .purchase-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #7289da;
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .purchase-button:hover {
+            background-color: #677bc4;
+        }
+
+        .footer {
+            text-align: center;
+            color: #cccccc;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navigationBar" class="flex flex-row items-center justify-between p-6 bg-sweetBlack">
+        <div class="left flex flex-row items-center ml-10 md:ml-20 text-white">
+            <img src="images/botLogo.png" width="48px" height="48px" class="mr-2 hidden md:inline pointer-events-none noselect" />
+            <a href="index.html" class="mx-4 text-xl hover:text-blurple">Home</a>
+            <a href="commands.html" class="mx-4 text-xl hover:text-blurple hidden md:inline">Commands</a>
+        </div>
+        <div class="right mr-10 md:mr-20">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1170320568164286584&scope=bot+applications.commands&permissions=8" target="_blank" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg"><i class="fab fa-discord mr-1"></i> Invite</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="purchase-title">Purchase Bender</h1>
+        <p class="purchase-description">Thank you for choosing Bender! Purchase now to unlock all premium features.</p>
+        <a href="#" class="purchase-button">Purchase Now</a>
+        <a href="https://discord.gg/nicki" target="_blank" class="text-2xl hvr-grow text-white bg-sweetBlack p-4 md:px-8 mx-4 my-4 rounded-lg border-blurple border-2">Join the Support Server</a>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright © Bendbot 2024</p>
+    </footer>
+</body>
+</html>
