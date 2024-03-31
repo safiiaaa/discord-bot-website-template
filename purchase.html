@@ -12,17 +12,16 @@
             margin: 0;
             padding: 0;
             background-color: #1D1E23;
+            color: #ffffff; /* Changed font color to white */
         }
 
         h1, h2, h3, h4, h5, h6 {
             margin: 0;
             font-weight: 900;
-            color: #ffffff;
         }
 
         p {
             margin: 0;
-            color: #cccccc;
         }
 
         /* Navigation bar */
@@ -32,6 +31,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
         }
 
         .nav-left {
@@ -47,15 +49,17 @@
             color: #ffffff;
             text-decoration: none;
             margin-right: 20px;
+            font-size: 16px; /* Adjusted font size */
         }
 
         /* Main container */
         .container {
-            padding: 80px 20px;
+            padding-top: 80px; /* Adjusted padding */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-bottom: 50px; /* Added some padding */
         }
 
         /* Purchase plans */
@@ -74,6 +78,7 @@
             flex: 1;
             max-width: 300px;
             transition: transform 0.3s ease-in-out;
+            color: #ffffff; /* Adjusted font color */
         }
 
         .plan:hover {
@@ -83,13 +88,11 @@
         .plan h2 {
             margin-bottom: 10px;
             font-size: 24px;
-            color: #ffffff;
         }
 
         .plan p {
             margin-bottom: 20px;
             font-size: 18px;
-            color: #cccccc;
         }
 
         .plan button {
@@ -116,6 +119,7 @@
             text-decoration: none;
             transition: background-color 0.3s;
             margin-top: 20px;
+            font-size: 18px;
         }
 
         .support-button:hover {
@@ -130,10 +134,7 @@
             width: 100%;
             position: fixed;
             bottom: 0;
-        }
-
-        footer p {
-            color: #cccccc;
+            color: #cccccc; /* Adjusted font color */
         }
     </style>
 </head>
@@ -142,7 +143,7 @@
     <nav id="navigationBar">
         <div class="nav-left">
             <img src="images/botLogo.png" width="48px" height="48px">
-            <a href="index.html">Home</a>
+            <a href="#">Home</a> <!-- Adjusted link -->
             <a href="commands.html">Commands</a>
         </div>
         <div class="nav-right">
